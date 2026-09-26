@@ -1,0 +1,1463 @@
+Style.css
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6f8fc;
+    color: #182238;
+    line-height: 1.6;
+}
+
+
+/* HEADER */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+
+    background: white;
+
+    border-bottom: 1px solid #e8edf5;
+
+    padding: 15px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.brand {
+    text-decoration: none;
+
+    color: #163b73;
+
+    font-size: 21px;
+
+    font-weight: 850;
+}
+
+
+.brand span {
+    color: #1670df;
+}
+
+
+nav {
+    display: flex;
+
+    gap: 8px;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+
+nav a {
+    padding: 8px 11px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    color: #4b5870;
+
+    font-weight: 650;
+
+    font-size: 14px;
+}
+
+
+nav a:hover,
+nav a.active {
+    background: #eaf2ff;
+
+    color: #1264ce;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 570px;
+
+    padding: 90px 9%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 60px;
+
+    background: linear-gradient(
+        125deg,
+        #eaf3ff,
+        #ffffff
+    );
+}
+
+
+.hero-text {
+    max-width: 720px;
+}
+
+
+.eyebrow {
+    font-size: 12px;
+
+    font-weight: 850;
+
+    letter-spacing: 2px;
+
+    color: #1264ce;
+
+    margin-bottom: 10px;
+}
+
+
+.hero h1 {
+    font-size: 60px;
+
+    line-height: 1.05;
+
+    margin: 0 0 22px;
+}
+
+
+.hero h1 span {
+    color: #1264ce;
+}
+
+
+.hero p:not(.eyebrow) {
+    font-size: 19px;
+
+    color: #5b6880;
+
+    max-width: 650px;
+}
+
+
+/* BUTTONS */
+
+.actions {
+    display: flex;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+}
+
+
+.btn {
+    display: inline-block;
+
+    border: 0;
+
+    border-radius: 10px;
+
+    background: #1264ce;
+
+    color: white;
+
+    padding: 12px 19px;
+
+    text-decoration: none;
+
+    font-weight: 750;
+
+    cursor: pointer;
+}
+
+
+.btn.secondary {
+    background: white;
+
+    color: #1264ce;
+
+    border: 1px solid #cddbf0;
+}
+
+
+/* HERO CARD */
+
+.hero-card {
+    width: 300px;
+
+    padding: 45px 30px;
+
+    text-align: center;
+
+    background: white;
+
+    border: 1px solid #dfe8f5;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 20px 50px rgba(30,65,110,.12);
+}
+
+
+.cap {
+    font-size: 65px;
+}
+
+
+.hero-card h3 {
+    font-size: 24px;
+
+    margin: 15px 0 4px;
+}
+
+
+.hero-card p {
+    color: #65728a;
+}
+
+
+/* SECTIONS */
+
+.section {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 75px 7%;
+}
+
+
+.section.compact {
+    padding-top: 30px;
+}
+
+
+.section-heading {
+    max-width: 700px;
+
+    margin-bottom: 28px;
+}
+
+
+.section h2 {
+    font-size: 34px;
+
+    line-height: 1.2;
+}
+
+
+/* CARDS */
+
+.cards {
+    display: grid;
+
+    gap: 18px;
+}
+
+
+.cards.three {
+    grid-template-columns:
+        repeat(3, 1fr);
+}
+
+
+.cards.two {
+    grid-template-columns:
+        repeat(2, 1fr);
+}
+
+
+.card {
+    background: white;
+
+    border: 1px solid #e0e7f1;
+
+    border-radius: 16px;
+
+    padding: 24px;
+
+    box-shadow:
+        0 8px 25px rgba(31,51,80,.05);
+}
+
+
+.card h3 {
+    margin-top: 8px;
+}
+
+
+.icon {
+    font-size: 32px;
+}
+
+
+/* CALLOUT */
+
+.callout,
+.survey {
+    max-width: 1100px;
+
+    margin: 10px auto 75px;
+
+    padding: 38px;
+
+    border-radius: 20px;
+
+    background: #172a4d;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+.callout h2,
+.survey h2 {
+    margin: 0 0 10px;
+
+    font-size: 29px;
+}
+
+
+.callout p:not(.eyebrow),
+.survey p:not(.eyebrow) {
+    color: #dce7f8;
+}
+
+
+.callout .btn,
+.survey .btn {
+    background: white;
+
+    color: #1264ce;
+
+    white-space: nowrap;
+}
+
+
+/* PAGE HERO */
+
+.page-hero {
+    padding: 70px 8% 45px;
+
+    background: #eaf3ff;
+}
+
+
+.page-hero h1 {
+    font-size: 48px;
+
+    margin: 0 0 10px;
+}
+
+
+.page-hero p:not(.eyebrow) {
+    max-width: 760px;
+
+    color: #5b6880;
+
+    font-size: 18px;
+}
+
+
+/* FINDER */
+
+.finder {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr) auto;
+
+    gap: 14px;
+
+    align-items: end;
+}
+
+
+.finder label {
+    font-weight: 750;
+
+    font-size: 14px;
+}
+
+
+.finder select {
+    width: 100%;
+
+    margin-top: 7px;
+
+    padding: 12px;
+
+    border: 1px solid #ccd7e6;
+
+    border-radius: 9px;
+
+    background: white;
+
+    font-size: 15px;
+}
+
+
+.results {
+    margin-top: 22px;
+}
+
+
+.text-link {
+    color: #1264ce;
+
+    font-weight: 750;
+
+    text-decoration: none;
+}
+
+
+/* APPLICATION TIMELINE */
+
+.timeline {
+    max-width: 850px;
+
+    margin: auto;
+}
+
+
+.step {
+    display: grid;
+
+    grid-template-columns: 70px 1fr;
+
+    gap: 20px;
+
+    padding: 24px 0;
+
+    border-bottom: 1px solid #e1e7f0;
+}
+
+
+.step span {
+    display: grid;
+
+    place-items: center;
+
+    width: 55px;
+
+    height: 55px;
+
+    border-radius: 50%;
+
+    background: #1264ce;
+
+    color: white;
+
+    font-weight: 850;
+}
+
+
+.step h3 {
+    margin: 0 0 5px;
+}
+
+
+.step p {
+    margin: 0;
+
+    color: #66738a;
+}
+
+
+/* NOTICE */
+
+.notice {
+    margin-top: 25px;
+
+    padding: 17px;
+
+    border-radius: 12px;
+
+    background: #fff6d9;
+
+    border-left: 5px solid #e1a100;
+}
+
+
+/* SAFETY */
+
+.danger {
+    border-top: 5px solid #d74646;
+}
+
+
+.safe {
+    border-top: 5px solid #1a9b69;
+}
+
+
+.card li {
+    margin: 10px 0;
+}
+
+
+/* FAQ */
+
+.faq {
+    max-width: 850px;
+}
+
+
+.faq details {
+    background: white;
+
+    border: 1px solid #e0e7f1;
+
+    border-radius: 12px;
+
+    margin: 10px 0;
+
+    padding: 16px 20px;
+}
+
+
+.faq summary {
+    font-weight: 750;
+
+    cursor: pointer;
+}
+
+
+.faq p {
+    color: #66738a;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #121d31;
+
+    color: #d7e0ee;
+
+    text-align: center;
+
+    padding: 35px 7%;
+}
+
+
+footer p {
+    margin: 7px 0;
+
+    color: #b9c7db;
+}
+
+
+footer small {
+    color: #91a2bb;
+}
+
+
+/* MOBILE */
+
+@media(max-width:850px) {
+
+    header {
+        padding: 14px 5%;
+
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 65px 7%;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .hero-card {
+        width: 100%;
+    }
+
+    .cards.three,
+    .cards.two,
+    .finder {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 55px 7%;
+    }
+
+    .page-hero {
+        padding: 55px 7%;
+    }
+
+    .page-hero h1 {
+        font-size: 39px;
+    }
+
+    .callout,
+    .survey {
+        margin: 0 7% 55px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .step {
+        grid-template-columns:
+            55px 1fr;
+    }
+
+}
+/* =========================
+   AUTH PAGES
+========================= */
+
+.auth-section {
+
+    min-height: 75vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 60px 20px;
+
+    background: #f6f8fc;
+}
+
+
+.auth-card {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    border: 1px solid #e0e7f1;
+
+    box-shadow:
+        0 15px 40px
+        rgba(31,51,80,.08);
+}
+
+
+.auth-card h1 {
+
+    margin-top: 5px;
+
+    font-size: 32px;
+}
+
+
+.auth-description {
+
+    color: #68758b;
+
+    margin-bottom: 25px;
+}
+
+
+.auth-card label {
+
+    display: block;
+
+    margin-top: 15px;
+
+    margin-bottom: 6px;
+
+    font-weight: 700;
+
+    font-size: 14px;
+}
+
+
+.auth-card input,
+.auth-card select {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccd7e6;
+
+    border-radius: 9px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+.auth-card input:focus,
+.auth-card select:focus {
+
+    border-color: #1264ce;
+}
+
+
+.auth-card .btn {
+
+    width: 100%;
+
+    margin-top: 25px;
+}
+
+
+.auth-bottom {
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #65728a;
+}
+
+
+.auth-bottom a {
+
+    color: #1264ce;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+#message,
+#loginMessage {
+
+    text-align: center;
+
+    margin-top: 15px;
+
+    font-weight: 600;
+}
+/* =========================================
+   REGISTER / AUTH PAGE
+========================================= */
+
+.auth-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.10);
+    box-sizing: border-box;
+}
+
+.auth-container h1 {
+    margin: 0 0 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.auth-container h2 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.auth-container > p {
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+/* Form */
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 25px;
+}
+
+
+/* Input and Select */
+
+.auth-container input,
+.auth-container select {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #d8dce3;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: inherit;
+    box-sizing: border-box;
+    outline: none;
+    background: #fff;
+    transition: 0.2s;
+}
+
+.auth-container input:focus,
+.auth-container select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+
+/* Register Button */
+
+.auth-container button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.auth-container button:hover {
+    transform: translateY(-1px);
+    opacity: 0.92;
+}
+
+
+/* Firebase message */
+
+#message {
+    margin-top: 18px;
+    font-weight: 600;
+}
+
+
+/* Links */
+
+.auth-container a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-container a:hover {
+    text-decoration: underline;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .auth-container {
+        width: 92%;
+        margin: 30px auto;
+        padding: 25px 20px;
+    }
+
+    .auth-container h1 {
+        font-size: 25px;
+    }
+
+    .auth-container h2 {
+        font-size: 21px;
+    }
+
+}
+/* =========================================
+   PROFESSIONAL LOGIN / REGISTER NAV BUTTONS
+========================================= */
+
+nav .nav-login,
+nav .nav-register {
+    display: inline-block;
+    padding: 9px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+/* Login button */
+
+nav .nav-login {
+    border: 1.5px solid #2563eb;
+    color: #2563eb;
+    background: transparent;
+}
+
+nav .nav-login:hover {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+/* Register button */
+
+nav .nav-register {
+    background: #2563eb;
+    color: #ffffff;
+    border: 1.5px solid #2563eb;
+}
+
+nav .nav-register:hover {
+    transform: translateY(-1px);
+    opacity: 0.9;
+}
+/* =========================================
+   SCHOLARSHIP SAATHI - MODERN UI UPGRADE
+========================================= */
+
+/* Smooth transitions */
+* {
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+/* Better body */
+body {
+    background: #f4f7fb;
+    color: #172033;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 2px 15px rgba(20, 50, 90, 0.05);
+}
+
+.brand {
+    font-size: 22px;
+    letter-spacing: -0.4px;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+nav a {
+    position: relative;
+}
+
+nav a:not(.nav-login):not(.nav-register)::after {
+    content: "";
+    position: absolute;
+    left: 11px;
+    right: 11px;
+    bottom: 3px;
+    height: 2px;
+    background: #1264ce;
+    transform: scaleX(0);
+    transform-origin: center;
+}
+
+nav a:not(.nav-login):not(.nav-register):hover::after,
+nav a:not(.nav-login):not(.nav-register).active::after {
+    transform: scaleX(1);
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(37, 99, 235, 0.10),
+            transparent 30%
+        ),
+        linear-gradient(125deg, #eaf3ff, #ffffff);
+}
+
+.hero h1 {
+    letter-spacing: -1.5px;
+}
+
+.hero p:not(.eyebrow) {
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.btn {
+    box-shadow: 0 7px 18px rgba(18, 100, 206, 0.20);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(18, 100, 206, 0.28);
+}
+
+.btn.secondary:hover {
+    background: #f1f6ff;
+    border-color: #9dbbe6;
+}
+
+
+/* =========================================
+   HERO CARD
+========================================= */
+
+.hero-card {
+    position: relative;
+    overflow: hidden;
+    box-shadow:
+        0 20px 50px rgba(30, 65, 110, 0.12),
+        0 4px 10px rgba(30, 65, 110, 0.04);
+}
+
+.hero-card:hover {
+    transform: translateY(-6px);
+    box-shadow:
+        0 28px 60px rgba(30, 65, 110, 0.17);
+}
+
+.hero-card::before {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #eaf3ff;
+    top: -60px;
+    right: -50px;
+}
+
+
+/* =========================================
+   CARDS
+========================================= */
+
+.card {
+    position: relative;
+    overflow: hidden;
+    box-shadow:
+        0 8px 25px rgba(31, 51, 80, 0.05);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #c8d9ef;
+    box-shadow:
+        0 16px 35px rgba(31, 51, 80, 0.10);
+}
+
+.card h3 {
+    color: #172a4d;
+}
+
+.icon {
+    display: inline-flex;
+    width: 58px;
+    height: 58px;
+    align-items: center;
+    justify-content: center;
+    background: #eaf3ff;
+    border-radius: 15px;
+}
+
+
+/* =========================================
+   PAGE HERO
+========================================= */
+
+.page-hero {
+    background:
+        linear-gradient(
+            135deg,
+            #eaf3ff,
+            #f8fbff
+        );
+}
+
+.page-hero h1 {
+    letter-spacing: -1px;
+}
+
+
+/* =========================================
+   FORM CONTROLS
+========================================= */
+
+.finder select,
+.auth-card input,
+.auth-card select,
+.auth-container input,
+.auth-container select {
+    background: #fbfdff;
+}
+
+.finder select:hover,
+.auth-card input:hover,
+.auth-card select:hover,
+.auth-container input:hover,
+.auth-container select:hover {
+    border-color: #a9c3e5;
+}
+
+
+/* =========================================
+   AUTH CARD
+========================================= */
+
+.auth-card,
+.auth-container {
+    box-shadow:
+        0 20px 55px rgba(31, 51, 80, 0.10);
+}
+
+.auth-card:hover,
+.auth-container:hover {
+    box-shadow:
+        0 24px 65px rgba(31, 51, 80, 0.13);
+}
+
+.auth-card h1,
+.auth-container h1 {
+    color: #172a4d;
+    letter-spacing: -0.6px;
+}
+
+
+/* =========================================
+   AUTH BUTTON
+========================================= */
+
+.auth-card .btn,
+.auth-container button {
+    background: linear-gradient(
+        135deg,
+        #1264ce,
+        #2576df
+    );
+
+    box-shadow:
+        0 8px 20px rgba(18, 100, 206, 0.22);
+}
+
+.auth-card .btn:hover,
+.auth-container button:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 12px 28px rgba(18, 100, 206, 0.30);
+}
+
+
+/* =========================================
+   CALLOUT
+========================================= */
+
+.callout,
+.survey {
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 90% 20%,
+            rgba(255,255,255,0.08),
+            transparent 30%
+        ),
+        #172a4d;
+
+    box-shadow:
+        0 15px 35px rgba(20, 40, 70, 0.12);
+}
+
+.callout:hover,
+.survey:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   NOTICE
+========================================= */
+
+.notice {
+    box-shadow: 0 5px 15px rgba(100, 80, 20, 0.05);
+}
+
+
+/* =========================================
+   FAQ
+========================================= */
+
+.faq details {
+    transition: all 0.25s ease;
+}
+
+.faq details:hover {
+    border-color: #b8cce8;
+    box-shadow: 0 6px 20px rgba(31, 51, 80, 0.06);
+}
+
+.faq details[open] {
+    border-color: #9dbbe6;
+    background: #fbfdff;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background:
+        linear-gradient(
+            135deg,
+            #101b2e,
+            #172a4d
+        );
+}
+
+footer strong {
+    font-size: 18px;
+}
+
+
+/* =========================================
+   LOGIN / REGISTER NAV
+========================================= */
+
+nav .nav-login,
+nav .nav-register {
+    padding: 9px 18px;
+    border-radius: 9px;
+}
+
+nav .nav-login:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.12);
+}
+
+nav .nav-register {
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.18);
+}
+
+nav .nav-register:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+
+/* =========================================
+   MOBILE IMPROVEMENTS
+========================================= */
+
+@media (max-width: 600px) {
+
+    header {
+        gap: 12px;
+    }
+
+    .brand {
+        font-size: 20px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    nav .nav-login,
+    nav .nav-register {
+        padding: 8px 13px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p:not(.eyebrow) {
+        font-size: 17px;
+    }
+
+    .auth-card,
+    .auth-container {
+        padding: 25px 20px;
+    }
+}
+/* ================================
+   Floating Notification Bar
+================================ */
+
+.notification-bar {
+    width: 100%;
+    overflow: hidden;
+    background: #1264ce;
+    color: white;
+    padding: 10px 0;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.notification-content {
+    display: inline-block;
+    padding-left: 100%;
+    animation: notification-scroll 22s linear infinite;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.notification-content strong {
+    font-weight: 700;
+}
+
+.notification-bar:hover .notification-content {
+    animation-play-state: paused;
+}
+
+@keyframes notification-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .notification-content {
+        font-size: 13px;
+        animation-duration: 18s;
+    }
+
+    .notification-bar {
+        padding: 8px 0;
+    }
+}
+/* Scholarship Saathi Logo Container */
+
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 20px;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+.logo-container img {
+    width: 420px;
+    max-width: 90%;
+    height: auto;
+    display: block;
+}
+/* =========================================
+   Expandable Document Checklist
+   ========================================= */
+
+.document-list {
+    margin-top: 18px;
+    padding: 18px;
+    background: #f5f9ff;
+    border-radius: 12px;
+    border-left: 4px solid #1264ce;
+}
+
+.document-list h4 {
+    margin: 0 0 12px;
+    color: #1264ce;
+    font-size: 17px;
+}
+
+.document-list ul {
+    margin: 0;
+    padding-left: 22px;
+}
+
+.document-list li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.document-note {
+    margin-top: 16px;
+    padding: 12px;
+    background: #fff8e1;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+details.card {
+    cursor: pointer;
+}
+
+details.card summary {
+    list-style: none;
+}
+
+details.card summary::-webkit-details-marker {
+    display: none;
+}
+
+details.card summary h3::after {
+    content: " ▼";
+    float: right;
+    font-size: 13px;
+    color: #1264ce;
+}
+
+details.card[open] summary h3::after {
+    content: " ▲";
+}
+
+details.card[open] {
+    border-color: #1264ce;
+}

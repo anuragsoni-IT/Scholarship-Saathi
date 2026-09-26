@@ -1,0 +1,180 @@
+Register.html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Register - Scholarship Saathi</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+     <!-- Scholarship Saathi Logo -->
+<div class="logo-container">
+    <img src="images/scholarship-logo.jpeg"
+         alt="Scholarship Saathi Logo">
+</div>
+
+    <!-- ==============================
+         REGISTER SECTION
+    =============================== -->
+
+    <div class="auth-container">
+
+        <h1>🎓 Scholarship Saathi</h1>
+
+        <h2>Create Student Account</h2>
+
+        <p>
+            Register to find and manage
+            scholarship opportunities.
+        </p>
+
+
+        <!-- Registration Form -->
+
+        <form id="registerForm">
+
+            <!-- Full Name -->
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Full Name"
+                required
+            >
+
+
+            <!-- Email -->
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email Address"
+                required
+            >
+
+
+            <!-- Mobile -->
+
+            <input
+                type="tel"
+                id="mobile"
+                placeholder="Mobile Number"
+                pattern="[0-9]{10}"
+                maxlength="10"
+                required
+            >
+
+
+            <!-- College -->
+
+            <input
+                type="text"
+                id="college"
+                placeholder="College Name"
+                required
+            >
+
+
+            <!-- Course -->
+
+            <input
+                type="text"
+                id="course"
+                placeholder="Course (e.g. BSc IT)"
+                required
+            >
+
+
+            <!-- Year -->
+
+            <select id="year" required>
+
+                <option value="">
+                    Select Year
+                </option>
+
+                <option value="First Year">
+                    First Year
+                </option>
+
+                <option value="Second Year">
+                    Second Year
+                </option>
+
+                <option value="Third Year">
+                    Third Year
+                </option>
+
+            </select>
+
+
+            <!-- Password -->
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Create Password"
+                minlength="6"
+                required
+            >
+
+
+            <!-- Register Button -->
+
+            <button type="submit">
+                Register
+            </button>
+
+        </form>
+
+
+        <!-- Firebase message -->
+
+        <p id="message"></p>
+
+
+        <!-- Login link -->
+
+        <p>
+
+            Already have an account?
+
+            <a href="login.html">
+                Login
+            </a>
+
+        </p>
+
+
+        <!-- Home link -->
+
+        <p>
+
+            <a href="index.html">
+                ← Back to Home
+            </a>
+
+        </p>
+
+    </div>
+
+
+    <!-- Firebase Authentication JavaScript -->
+
+    <script
+        type="module"
+        src="auth.js">
+    </script>
+
+</body>
+
+</html>     

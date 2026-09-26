@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Scholarship Saathi | Scholarships
+    </title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <style>
+
+        /* Eligibility Form */
+
+        .finder {
+            display: grid;
+            gap: 16px;
+        }
+
+        .finder label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 7px;
+        }
+
+        .finder select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #d7dee8;
+            border-radius: 8px;
+            background: white;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        .check-btn {
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            margin-top: 4px;
+        }
+
+        /* Results */
+
+        .results {
+            margin-top: 28px;
+        }
+
+        .results-title {
+            margin-bottom: 18px;
+        }
+
+        .result-card {
+            position: relative;
+        }
+
+        .match-badge {
+            display: inline-block;
+            background: #e8f5e9;
+            color: #19733a;
+            padding: 5px 9px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .match-info {
+            background: #f6f9fc;
+            padding: 12px;
+            border-radius: 8px;
+            margin: 12px 0;
+            font-size: 13px;
+        }
+
+        .match-info p {
+            margin: 5px 0;
+        }
+
+        .important-note {
+            margin-top: 20px;
+            padding: 14px;
+            border-left: 4px solid #1264ce;
+            background: #eef5ff;
+            border-radius: 6px;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 25px;
+        }
+
+        .selected-details {
+            margin-top: 12px;
+            font-size: 13px;
+            color: #555;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+     <!-- Scholarship Saathi Logo -->
+<div class="logo-container">
+    <img src="images/scholarship-logo.jpeg"
+         alt="Scholarship Saathi Logo">
+</div>
+
+
+<header>
+
+    <a class="brand" href="index.html">
+        🎓 Scholarship <span>Saathi</span>
+    </a>
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a class="active"
+           href="scholarships.html">
+            Scholarships
+        </a>
+
+        <a href="guide.html">
+            How to Apply
+        </a>
+
+        <a href="awareness.html">
+            Awareness & Safety
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+
+<section class="page-hero">
+
+    <p class="eyebrow">
+        PAGE 2
+    </p>
+
+    <h1>
+        Scholarship Finder
+    </h1>
+
+    <p>
+        Enter your basic details to find scholarship
+        schemes that may be relevant to your profile.
+        Final eligibility is decided by the respective
+        official scholarship portal.
+    </p>
+
+</section>
+
+
+<section class="section">
+
+
+<div class="finder card">
+
+
+    <!-- Education -->
+
+    <div>
+
+        <label for="education">
+            Education Level
+        </label>
+
+        <select id="education">
+
+            <option value="ug">
+                Undergraduate
+            </option>
+
+            <option value="pg">
+                Postgraduate
+            </option>
+
+            <option value="school">
+                School
+            </option>
+
+            <option value="diploma">
+                Diploma / Polytechnic
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <!-- Course -->
+
+    <div>
+
+        <label for="course">
+            Course / Stream
+        </label>
+
+        <select id="course">
+
+            <option value="general">
+                General / Other
+            </option>
+
+            <option value="it">
+                IT / Computer Science
+            </option>
+
+            <option value="engineering">
+                Engineering
+            </option>
+
+            <option value="management">
+                Management / BMS / BBA
+            </option>
+
+            <option value="medical">
+                Medical / Health Sciences
+            </option>
+
+            <option value="other">
+                Other Professional Course
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <!-- Year -->
+
+    <div>
+
+        <label for="year">
+            Year of Study
+        </label>
+
+        <select id="year">
+
+            <option value="1">
+                First Year
+            </option>
+
+            <option value="2">
+                Second Year
+            </option>
+
+            <option value="3">
+                Third Year
+            </option>
+
+            <option value="4">
+                Fourth Year
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <!-- Income -->
+
+    <div>
+
+        <label for="income">
+            Annual Family Income
+        </label>
+
+        <select id="income">
+
+            <option value="under1">
+                Below ₹1 Lakh
+            </option>
+
+            <option value="1to2.5">
+                ₹1 Lakh – ₹2.5 Lakh
+            </option>
+
+            <option value="2.5to5">
+                ₹2.5 Lakh – ₹5 Lakh
+            </option>
+
+            <option value="5to8">
+                ₹5 Lakh – ₹8 Lakh
+            </option>
+
+            <option value="above8">
+                Above ₹8 Lakh
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <!-- State -->
+
+    <div>
+
+        <label for="state">
+            State / Domicile
+        </label>
+
+        <select id="state">
+
+            <option value="maharashtra">
+                Maharashtra
+            </option>
+
+            <option value="other">
+                Other State
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <!-- Caste -->
+
+    <div>
+
+        <label for="caste">
+            Caste Category
+        </label>
+
+        <select id="caste">
+
+            <option value="general">
+                General / Open
+            </option>
+
+            <option value="ews">
+                EWS
+            </option>
+
+            <option value="obc">
+                OBC
+            </option>
+
+            <option value="sc">
+                SC
+            </option>
+
+            <option value="st">
+                ST
+            </option>
+
+            <option value="vjnt">
+                VJNT
+            </option>
+
+            <option value="sbc">
+                SBC
+            </option>
+
+            <option value="minority">
+                Minority
+            </option>
+
+            <option value="other">
+                Other
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <!-- Check Button -->
+
+    <button class="btn check-btn"
+            onclick="checkEligibility()">
+
+        🔍 Check Eligibility
+
+    </button>
+
+
+</div>
+
+
+<!-- Results -->
+
+<div id="results"
+     class="results">
+
+</div>
+
+
+</section>
+
+
+<!-- Official Portals -->
+
+
+<section class="section compact">
+
+<h2>
+    Official Scholarship Portals
+</h2>
+
+
+<div class="cards two">
+
+
+<article class="card">
+
+    <div class="icon">
+        🇮🇳
+    </div>
+
+    <h3>
+        National Scholarship Portal
+    </h3>
+
+    <p>
+        Use the official portal to check available
+        scholarship schemes, eligibility requirements,
+        application dates and current updates.
+    </p>
+
+    <a class="text-link"
+       target="_blank"
+       rel="noopener"
+       href="https://scholarships.gov.in/">
+
+        Open scholarships.gov.in ↗
+
+    </a>
+
+</article>
+
+
+<article class="card">
+
+    <div class="icon">
+        🏛️
+    </div>
+
+    <h3>
+        MahaDBT
+    </h3>
+
+    <p>
+        Maharashtra's Direct Benefit Transfer portal
+        provides access to scholarship and freeship
+        schemes offered by different departments.
+    </p>
+
+    <a class="text-link"
+       target="_blank"
+       rel="noopener"
+       href="https://mahadbt.maharashtra.gov.in/">
+
+        Open MahaDBT ↗
+
+    </a>
+
+</article>
+
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+    <strong>
+        Scholarship Saathi
+    </strong>
+
+    <p>
+        CEP Mini Project • Created by Anurag Soni,
+        Shekhar Utla, Arvind Suthar, Arman Siddiqui
+        <br>
+        TYIT
+    </p>
+
+    <small>
+        Always verify current information
+        on official government portals.
+    </small>
+
+</footer>
+
+
+<script src="Script.js"></script>
+
+</body>
+
+</html>
